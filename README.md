@@ -6,11 +6,6 @@ Data is more powerful when we share it with others! Let's take what we've learne
 
 ![images/landingResize.png](images/landingResize.png)
 
-
-4. Push the above changes to GitHub or GitLab.
-
-5. Deploy to GitHub Pages. 
-
 ## Latitude - Latitude Analysis Dashboard with Attitude
 
 For this homework we'll be creating a visualization dashboard website using visualizations we've created in a past assignment. Specifically, we'll be plotting [weather data](resources/cities.csv).
@@ -124,7 +119,3 @@ Large screen:
 
 Small screen:
 ![nav menu small screen](images/nav-sm.png)
-
-### Copyright
-
-Trilogy Education Services © 2019. All Rights Reserved.
