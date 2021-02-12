@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Comparisons | Weather Dashboard - Got Weather?</title>
+  <title>Weather Dashboard - Got Weather?</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -52,17 +52,17 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li><a href="index.html">Home</a></li>                    
-          
-          <li class="active drop-down"><a href="visualizations.html">Visualizations</a>
+          <li><a href="index.html">Home</a></li>          
+          <li><a href="comparisons.html">Comparisons</a></li>
+          <li><a href="data.html">Data</a></li>
+          <li class="active drop-down"><a href="visualizations.html">Plots</a>
             <ul>
-              <li><a href="#fig01">Temperature (F) vs. Latitude</a></li>
-              <li><a href="#fig02">Humidity (%) vs. Latitude</a></li>
-              <li><a href="#fig03">Cloudiness (%) vs. Latitude</a></li>
-              <li><a href="#fig04">Wind Speed (mph) vs. Latitude</a></li>                                        
+              <li><a href="visualizations.html#fig01">Temperature (F) vs. Latitude</a></li>
+              <li><a href="visualizations.html#fig02">Humidity (%) vs. Latitude</a></li>
+              <li><a href="visualizations.html#fig03">Cloudiness (%) vs. Latitude</a></li>
+              <li><a href="visualizations.html#fig04">Wind Speed (mph) vs. Latitude</a></li>                                        
             </ul>
           </li>          
-          <li><a href="data.html">Data</a></li>
         </ul>
       </nav><!-- .nav-menu -->      
     </div>
@@ -70,40 +70,49 @@
 
 
    <!-- ======= Hero Section ======= -->
-   <section>
+   <section id="hero" class="d-flex align-items-center">
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
       <div class="row justify-content-center">
         <div class="col-xl-7 col-lg-9 text-center">
           <h1>Visualizations</h1>
-          <h5>What's the weather like as we approach the equator?</h5>
+          <h2>What's the weather like as we approach the equator?</h2>
         </div>
       </div>      
 
-        <!-- Section -->
-        <section>
-          <div class="container">
-            <div class="row content viz-container">
-              <div class="col-lg-6 pt-4 pt-lg-0">
-                <h2 class="text-center">Latitude vs. Temperature (F)</h2>          
-                <a href="#fig01"><img class="img-fluid viz-image" src="visualizations/fig01_lat_temp.png" alt="" /></a>
-              </div>
-              <div class="col-lg-6 pt-4 pt-lg-0">
-                <h2 class="text-center">Latitude vs. Humidity (%)</h2>          
-                <a href="#fig02"><img class="img-fluid viz-image" src="visualizations/fig02_lat_hum.png" alt="" /></a>
-              </div>
-              <div class="col-lg-6 pt-4 pt-lg-0">
-                <h2 class="text-center">Latitude vs. Cloudiness (%)</h2>          
-                <a href="#fig03"><img class="img-fluid viz-image" src="visualizations/fig03_lat_cloud.png" alt="" /></a>
-              </div>
-              <div class="col-lg-6 pt-4 pt-lg-0">
-                <h2 class="text-center">Latitude vs. Windiness (mph)</h2>          
-                <a href="#fig04"></a><img class="img-fluid viz-image" src="visualizations/fig04_lat_wind.png" alt="" /></a>
-              </div>
-
-            </div>
+      <div class="row icon-boxes viz">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box">
+            <h4 class="title"><a href="visualizations.html#fig01">Latitude vs Temperature</a></h4>
+            <a href="#fig01"><img src="visualizations/fig01_lat_temp.png" alt="Latitude vs Temperature" /></a>
+              <p class="description">Latitude vs. Temperature (F) scatter plot shows temperatures rising as you get closer to zero degrees latitude (equator).</p>            
           </div>
-        </section><!-- End Section -->
-    
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box">            
+            <h4 class="title"><a href="visualizations.html#fig02">Humidity (%) vs. Latitude</a></h4>
+            <a href="#fig02"><img src="visualizations/fig02_lat_hum.png" alt="Humidity (%) vs. Latitude" /></a>
+            <p class="description">Latitude vs. Humidity (%) scatter plot does not appear to show a strong correlation.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box">
+            <h4 class="title"><a href="visualizations.html#fig03">Cloudiness (%) vs. Latitude</a></h4>
+            <a href="#fig03"><img src="visualizations/fig03_lat_cloud.png" alt="Cloudiness (%) vs. Latitude" /></a>
+            
+            <p class="description">Latitude vs. Cloudiness (%) scatter plot does not appear to show a strong correlation.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box">    
+            <h4 class="title"><a href="visualizations.html#fig04">Wind Speed (mph) vs. Latitude</a></h4>
+            <a href="#fig04"><img src="visualizations/fig04_lat_wind.png" alt="Wind Speed (mph) vs. Latitude" /></a>        
+            
+            <p class="description">Latitude vs. Wind Speed scatter plot does not appear to show a strong correlation.</p>
+          </div>
+        </div>  
 
       </div>
     </div>
@@ -111,14 +120,6 @@
   
 
   <main id="main">
-
-
-
-
-
-
-
-
     <!-- ======= Latitude vs Temperature Section ======= -->
     <section id="fig01" >
       <div class="container">
@@ -140,7 +141,7 @@
         </div>
 
       </div>
-    </section><!-- End Latitude vs Temperature Section -->
+    </section><!-- Latitude vs Temperature Section -->
 
     <!-- ======= Humidity (%) vs. Latitude Section ======= -->
     <section id="fig02" >
@@ -223,11 +224,9 @@
     <section id="cta" class="cta">
       <div class="container">
         <div class="text-center">
-          <h3>Raw Data</h3>
-          <p> 
-            CityPy library and OpenWeatherMap API were utilized to generate retrieve random list of cites, associated weather data and create a representative model of weather across world cities.
-          </p>
-          <a class="cta-btn" href="data.html">Check out the Data</a>
+          <h3>Data Comparison</h3>
+          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a class="cta-btn" href="#">Compare the Data</a>
         </div>
       </div>
     </section><!-- End Cta Section -->
@@ -254,7 +253,8 @@
             <h4>Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="visualizations.html">Visualizations</a></li>              
+              <li><i class="bx bx-chevron-right"></i> <a href="visualizations.html">Visualizations</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="comparisons.html">Comparisons</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="data.html">Data</a></li>              
             </ul>
           </div>
