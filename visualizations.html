@@ -56,10 +56,10 @@
           
           <li class="active drop-down"><a href="visualizations.html">Visualizations</a>
             <ul>
-              <li><a href="#fig01">Temperature (F) vs. Latitude</a></li>
-              <li><a href="#fig02">Humidity (%) vs. Latitude</a></li>
-              <li><a href="#fig03">Cloudiness (%) vs. Latitude</a></li>
-              <li><a href="#fig04">Wind Speed (mph) vs. Latitude</a></li>                                        
+              <li><a href="#fig01">Latitude vs. Temperature (F)</a></li>
+              <li><a href="#fig02">Latitude vs. Humidity (%)</a></li>
+              <li><a href="#fig03">Latitude vs. Cloudiness (%)</a></li>
+              <li><a href="#fig04">Latitude vs. Wind Speed (mph)</a></li>                                        
             </ul>
           </li>          
           <li><a href="data.html">Data</a></li>
@@ -71,11 +71,12 @@
 
    <!-- ======= Hero Section ======= -->
    <section>
-    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+    <div class="container position-relative section-top" data-aos="fade-up" data-aos-delay="100">
       <div class="row justify-content-center">
         <div class="col-xl-7 col-lg-9 text-center">
           <h1>Visualizations</h1>
           <h5>What's the weather like as we approach the equator?</h5>
+          <p>Click on each visualization to see analysis</p>
         </div>
       </div>      
 
@@ -112,29 +113,21 @@
 
   <main id="main">
 
-
-
-
-
-
-
-
     <!-- ======= Latitude vs Temperature Section ======= -->
     <section id="fig01" >
       <div class="container">
 
         <div class="section-title">
-          <h2>Latitude vs. Temerature (F)</h2>          
+          <h2>Latitude vs. Temperature (F)</h2>  
+          <p>Latitude vs. Temperature (F) scatter plot shows temperatures rising as you get closer to zero degrees latitude.</p>        
         </div>
 
         <div class="row content">
           <div class="col-lg-6 pt-4 pt-lg-0">
-            <p>
-              Latitude vs. Temerature (F) scatter plot shows temperatures rising as you get closer to zero degrees latitude (equator), then as the latitude values increase greater than zero (increasing further from the equator), the temperature decreases steadily.
-            </p>
+            <p>Latitude vs. Temperature (F) scatter plot shows temperatures rising as you get closer to zero degrees latitude (equator), then as the latitude values increase greater than zero (increasing further from the equator), the temperature decreases steadily.</p>
           </div>
           <div class="col-lg-6">            
-            <img class="img-fluid" src="visualizations/fig01_lat_temp.png" alt="" />                                    
+            <img class="img-fluid viz-image" src="visualizations/fig01_lat_temp.png" alt="" />                                    
           </div>
 
         </div>
@@ -147,16 +140,19 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Humidity (%) vs. Latitude</h2>          
+          <h2>Latitude vs. Humidity (%)</h2> 
+          <p>
+            Latitude vs. Humidity (%) scatter plot does not appear to show a strong correlation.
+          </p>         
         </div>
 
         <div class="row content">
           <div class="col-lg-6">            
-            <img class="img-fluid" src="visualizations/fig02_lat_hum.png" alt="" />                                    
+            <img class="img-fluid viz-image" src="visualizations/fig02_lat_hum.png" alt="" />                                    
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <p>
-              Latitude vs. Humidity (%) scatter plot does not appear to show a strong correlation.
+              Latitude vs. Humidity scatter plot shows most data points at 60% humidity or higher across all latitudes. There are more data points north of the equator (greater than zero degrees latitude), but the plot does not show a strong correlation between percent humidity and latitude.
             </p>
           </div>
         </div>
@@ -169,18 +165,21 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Cloudiness (%) vs. Latitude</h2>          
+          <h2>Latitude vs. Cloudiness (%)</h2>    
+          <p>
+            Latitude vs. Cloudiness (%) scatter plot does not appear to show a strong correlation.
+          </p>      
         </div>
 
         <div class="row content">
 
           <div class="col-lg-6 pt-4 pt-lg-0">
             <p>
-              Latitude vs. Cloudiness (%) scatter plot does not appear to show a strong correlation.
+              Latitude vs. Cloudiness (%) scatter plot shows data points evenly dispursed across all latitudes. Many data points concentrated at 100%, 0%, but evenly across all latitudes. Slightly more data points above the equator (greater than zero degrees latitue). The plot shows very weak to no correlation between latitude and percent cloudiness.
             </p>
           </div>
           <div class="col-lg-6">            
-            <img class="img-fluid" src="visualizations/fig03_lat_cloud.png" alt="" />                                    
+            <img class="img-fluid viz-image" src="visualizations/fig03_lat_cloud.png" alt="" />                                    
           </div>
           
         </div>
@@ -195,17 +194,17 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Wind Speed (mph) vs. Latitude</h2>
-          <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+          <h2>Latitude vs. Wind Speed (mph)</h2>
+          <p>Latitude vs. Wind Speed scatter plot does not appear to show a strong correlation.</p>
         </div>
 
         <div class="row content">
           <div class="col-lg-6">            
-            <img class="img-fluid" src="visualizations/fig04_lat_wind.png" alt="Wind Speed (mph) vs. Latitude" />                                    
+            <img class="img-fluid viz-image" src="visualizations/fig04_lat_wind.png" alt="Wind Speed (mph) vs. Latitude" />                                    
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <p>
-              Latitude vs. Wind Speed scatter plot does not appear to show a strong correlation.
+              Wind speed data points show most wind speeds (mph) 10 mph or less. As you get closer and farther away from 0 degrees latitude the plot does not appear to show any strong correlation between wind speed (mph) and latitude.
             </p>
           </div>
         </div>
