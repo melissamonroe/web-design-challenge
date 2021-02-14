@@ -2,7 +2,7 @@
 
 ## Background
 
-Data is more powerful when we share it with others! Let's take what we've learned about HTML and CSS to create a dashboard showing off the analysis we've done.
+Data is more powerful when we share it with others! HTML and CSS were used to create a dashboard showing off the weather analysis from [WeatherPy](https://github.com/melissamonroe/python-api-challenge).
 
 ![images/landingResize.png](images/01-landing-lg.png)
 
