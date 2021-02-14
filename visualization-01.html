@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Comparisons | Weather Dashboard - Got Weather?</title>
+  <title>Latitude vs. Temperature (F) | Weather Dashboard - Got Weather?</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -72,35 +72,27 @@
    <!-- ======= Hero Section ======= -->
    <section>
     <div class="container position-relative section-top" data-aos="fade-up" data-aos-delay="100">
-      <div class="row justify-content-center">
-        <div class="col-xl-7 col-lg-9 text-center">
-          <h1>Visualizations</h1>
-          <h5>What's the weather like as we approach the equator?</h5>
-          <p>Click on each visualization to see analysis</p>
-        </div>
-      </div>      
+
 
         <!-- Section -->
         <section>
           <div class="container">
             <div class="row content viz-container">
-              <div class="col-lg-6 pt-4 pt-lg-0">
-                <h2 class="text-center">Latitude vs. Temperature (F)</h2>          
-                <a href="visualization-01.html"><img class="img-fluid viz-image" src="visualizations/fig01_lat_temp.png" alt="" /></a>
+              <div class="col-lg-9 pt-4 pt-lg-0">  
+                <div class="section-title">
+                  <h2>Latitude vs. Temperature (F)</h2>  
+                  <p>Latitude vs. Temperature (F) scatter plot shows temperatures rising as you get closer to zero degrees latitude.</p>        
+                </div>
+                    <p>Latitude vs. Temperature (F) scatter plot shows temperatures rising as you get closer to zero degrees latitude (equator), then as the latitude values increase greater than zero (increasing further from the equator), the temperature decreases steadily.</p>
+                    <img class="img-fluid viz-image" src="visualizations/fig01_lat_temp.png" alt="" />                                    
+                </div>      
+                <div class="col-lg-3 pt-4 pt-lg-0 viz-summary">                              
+                  <a href="visualization-01.html"><img class="img-fluid viz-image viz-active" src="visualizations/fig01_lat_temp.png" alt="" /></a>
+                  <a href="visualization-02.html"><img class="img-fluid viz-image" src="visualizations/fig02_lat_hum.png" alt="" /></a>
+                  <a href="visualization-03.html"><img class="img-fluid viz-image" src="visualizations/fig03_lat_cloud.png" alt="" /></a>
+                  <a href="visualization-04.html"><img class="img-fluid viz-image" src="visualizations/fig04_lat_wind.png" alt="" /></a>
+                </div>                                                             
               </div>
-              <div class="col-lg-6 pt-4 pt-lg-0">
-                <h2 class="text-center">Latitude vs. Humidity (%)</h2>          
-                <a href="visualization-02.html"><img class="img-fluid viz-image" src="visualizations/fig02_lat_hum.png" alt="" /></a>
-              </div>
-              <div class="col-lg-6 pt-4 pt-lg-0">
-                <h2 class="text-center">Latitude vs. Cloudiness (%)</h2>          
-                <a href="visualization-03.html"><img class="img-fluid viz-image" src="visualizations/fig03_lat_cloud.png" alt="" /></a>
-              </div>
-              <div class="col-lg-6 pt-4 pt-lg-0">
-                <h2 class="text-center">Latitude vs. Windiness (mph)</h2>          
-                <a href="visualization-04.html"><img class="img-fluid viz-image" src="visualizations/fig04_lat_wind.png" alt="" /></a>
-              </div>
-
             </div>
           </div>
         </section><!-- End Section -->
@@ -108,10 +100,21 @@
 
       </div>
     </div>
-  </section><!-- End Hero -->
-  
+  </section>
+  <div class="container">
+    <div class="row content viz-container">
+      <div class="col-lg-9 pt-4 pt-lg-0 viz-summary-small">      
+        <a href="visualization-01.html"><img class="img-fluid viz-active" src="visualizations/fig01_lat_temp.png" alt="" /></a>
+        <a href="visualization-02.html"><img class="img-fluid" src="visualizations/fig02_lat_hum.png" alt="" /></a>
+        <a href="visualization-03.html"><img class="img-fluid" src="visualizations/fig03_lat_cloud.png" alt="" /></a>
+        <a href="visualization-04.html"><img class="img-fluid" src="visualizations/fig04_lat_wind.png" alt="" /></a>
+      </div>     
+    </div>
+  </div>  
 
   <main id="main">
+
+
 
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
